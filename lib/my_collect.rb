@@ -1,15 +1,15 @@
-def my_collect(languages)
+def my_collect(collection)
   i = 0
-  collection = []
-  while i < languages.length
-    languages.each do |language|
-      if language.length == 1
-        collection << language.upcase
-      elsif language.length > 1
-        collection << student.split(" ").first
+  new_collection = []
+  while i < collection.length
+    collection.each do |one_part|
+      if one_part.length == 1
+        new_collection << one_part.upcase
+      elsif one_part.length > 1
+        new_collection << one_part.split(" ").first
       end
     end
     i += 1
-    return collection
+    return new_collection
   end
 end
