@@ -3,7 +3,7 @@ def my_collect(collection)
   new_collection = []
   while i < collection.length
     collection.each do |one_part|
-      if one_part.length == 1
+      if one_part.length < 1
         new_collection << one_part.upcase
       elsif one_part.length > 1
         new_collection << one_part.split(" ").first
