@@ -4,8 +4,8 @@ def my_collect(collection_array)
   while i < collection_array.length
     collection_array.each do |language|
       collection << language.upcase
+      collection
     end
     i += 1
   end
-  collection
 end
