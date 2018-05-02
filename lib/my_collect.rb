@@ -9,3 +9,15 @@ def my_collect(collection_array)
     return collection
   end
 end
+
+def my_collect(collection)
+  i = 0
+  newcollection = []
+  while i < collection.length
+    collection.each do |name|
+      new_collection << name.split(" ").first
+    end
+    i += 1
+    return new_collection
+  end
+end
