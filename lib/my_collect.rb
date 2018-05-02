@@ -6,7 +6,7 @@ def my_collect(collection)
       if one_part.length <= 1
         yield new_collection << one_part.upcase
       elsif one_part.length > 1
-        new_collection << one_part.split(" ").first
+        yield new_collection << one_part.split(" ").first
       end
     end
     i += 1
