@@ -4,9 +4,9 @@ def my_collect(collection)
   while i < collection.length
     collection.each do |one_part|
       if one_part.length <= 1
-        yield new_collection << one_part.upcase
+        new_collection << one_part.upcase
       elsif one_part.length > 1
-        yield new_collection << one_part.split(" ").first
+        new_collection << one_part.split(" ").first
       end
     end
     i += 1
