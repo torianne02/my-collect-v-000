@@ -8,6 +8,7 @@ def my_collect(languages)
       elsif language.length > 1
         collection << student.split(" ").first
       end
+    end
     i += 1
     return collection
   end
