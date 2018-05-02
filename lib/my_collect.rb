@@ -12,12 +12,12 @@ end
 
 def my_collect(students)
   i = 0
-  new_collection = []
+  collection = []
   while i < students.length
     students.each do |student|
-      new_collection << student.split(" ").first
+      ncollection << student.split(" ").first
     end
     i += 1
-    return new_collection
+    return collection
   end
 end
