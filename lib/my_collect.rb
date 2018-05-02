@@ -10,12 +10,12 @@ def my_collect(collection_array)
   end
 end
 
-def my_collect(collection)
+def my_collect(students)
   i = 0
-  newcollection = []
-  while i < collection.length
-    collection.each do |name|
-      new_collection << name.split(" ").first
+  new_collection = []
+  while i < students.length
+    students.each do |student|
+      new_collection << student.split(" ").first
     end
     i += 1
     return new_collection
