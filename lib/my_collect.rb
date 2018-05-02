@@ -15,7 +15,7 @@ def my_collect(students)
   collection = []
   while i < students.length
     students.each do |student|
-      ncollection << student.split(" ").first
+      collection << student.split(" ").first
     end
     i += 1
     return collection
